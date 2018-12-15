@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<hibernate-mapping
+	package="studentSystem.students.domain.entity">
+	<class name="Student" table="student">
+		<id name="id" column="student_id">
+			<generator class="native" />
+		</id>
+		<property name="firstName" column="first_name" />
+		<property name="lastName" column="last_name" />
+		<property name="isActive" column="active" />
+		<property name="identityDocument" column="identity_document" />
+		<property name="createdAt" column="created_at_utc" />
+		<property name="updatedAt" column="updated_at_utc" />
+<!-- 		<discriminator column="student_type" type="string" /> -->
+
+<!-- 		<subclass name="DoctorateStudent" discriminator-value="DOC"> -->
+<!-- 			<join table="doctorate_student"> -->
+<!-- 				<key column="student_id" /> -->
+<!-- 				<property name="doctorateMajor" column="major" /> -->
+<!-- 				... -->
+<!-- 			</join> -->
+<!-- 		</subclass> -->
+<!-- 		<subclass name="PostgradeStudent" discriminator-value="POS"> -->
+<!-- 			<join table="postgrade_student"> -->
+<!-- 				<key column="student_id" /> -->
+<!-- 				<property name="postgradeMajor" column="major" /> -->
+
+<!-- 			</join> -->
+<!-- 		</subclass> -->
+<!-- 		<subclass name="UndergradeStudent" discriminator-value="UND"> -->
+<!-- 			<join table="undergrade_student"> -->
+<!-- 				<key column="student_id" /> -->
+<!-- 				<property name="major" column="major" /> -->
+
+<!-- 			</join> -->
+<!-- 		</subclass> -->
+
+	</class>
+</hibernate-mapping>
+ 

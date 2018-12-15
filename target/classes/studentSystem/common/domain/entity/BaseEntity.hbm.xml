@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15/12/2018 10:42:10 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="studentSystem.common.domain.entity.BaseEntity" table="BASEENTITY">
+        <id name="id" type="java.math.BigDecimal">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="createdAt" type="java.util.Date">
+            <column name="CREATEDAT" />
+        </property>
+        <property name="updatedAt" type="java.util.Date">
+            <column name="UPDATEDAT" />
+        </property>
+    </class>
+</hibernate-mapping>
